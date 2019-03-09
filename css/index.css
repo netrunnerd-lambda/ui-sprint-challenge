@@ -67,7 +67,7 @@ p {
     line-height: 1.4;
 }
 
-/** stay in yo lane, resets... >_> **/
+/** general **/
 
 .container {
     margin: 20px auto;
@@ -120,6 +120,7 @@ p {
 
 .middle-content .boxes .box {
     align-items: center;
+    background-color: black;
     color: white;
     display: flex;
     height: 100px;
@@ -128,7 +129,7 @@ p {
     width: 12.5%;
 }
 
-/** separator -- beep beep beep **/
+/** about page **/
 
 .about, .bottom-content {
     display: flex;
@@ -237,13 +238,13 @@ footer nav a:hover {
 
 /* colors */
 
-.notteal { background-color: teal; }
-.gold { background-color: gold; }
-.cadetblue { background-color: cadetblue; }
-.coral { background-color: coral; }
-.crimson { background-color: crimson; }
-.forestgreen { background-color: forestgreen; }
-.darkorchid { background-color: darkorchid; }
-.hotpink { background-color: hotpink; }
-.indigo { background-color: indigo; }
-.dodgerblue { background-color: dodgerblue; }
+.teal { background-color: teal !important; }
+.gold { background-color: gold !important; }
+.cadetblue { background-color: cadetblue !important; }
+.coral { background-color: coral !important; }
+.crimson { background-color: crimson !important; }
+.forestgreen { background-color: forestgreen !important; }
+.darkorchid { background-color: darkorchid !important; }
+.hotpink { background-color: hotpink !important; }
+.indigo { background-color: indigo !important; }
+.dodgerblue { background-color: dodgerblue !important; }
