@@ -81,9 +81,10 @@ p {
     margin-bottom: 40px;
 }
 
-.header-nav a {
+.header-nav a,
+.about-us .text-container a {
     color: black;
-    font-size: 13px;
+    font-size: 14px;
     margin: 0px 44px 0px;
     text-decoration: none;
 }
@@ -128,13 +129,13 @@ p {
     justify-content: center;
 }
 
-.bottom-content {
+.about, .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
 
-.bottom-content .text-container {
+.about .text-container, .bottom-content .text-container {
     padding-right: 4%;
 }
 
@@ -142,9 +143,47 @@ p {
     padding-right: 0;
 }
 
+.about-us {
+    padding-top: 30px;
+    border-bottom: none;
+    border-top: 1px dashed black;
+}
+
+.about-us {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.about-us section {
+    border-bottom: 1px dashed black;
+    margin-bottom: 60px;
+    width: 45%;
+}
+
+.about-us section:nth-last-of-type(-n+2) {
+    margin-bottom: 30px;
+}
+
+.about-us .text-container h2 {
+    margin: 10px 0 15px;
+    padding: 0;
+}
+
+.about-us .text-container a {
+    border: 2px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 0 20px;
+    padding: 10px 25px 10px;
+}
+
 footer {
     width: 100%;
     background: black;
+    position: aboslute;
+    bottom: 0;
 }
 
 footer nav {
@@ -162,19 +201,6 @@ footer nav a {
 }
 
 /* colors */
-
-/*
-            <div class="box teal">Box 1</div>
-            <div class="box gold">Box 2</div>
-            <div class="box cadetblue">Box 3</div>
-            <div class="box coral">Box 4</div>
-            <div class="box crimson">Box 5</div>
-            <div class="box forestgreen">Box 6</div>
-            <div class="box darkorchid">Box 7</div>
-            <div class="box hotpink">Box 8</div>
-            <div class="box indigo">Box 9</div>
-            <div class="box dodgerblue">Box 10</div>
-*/
 
 .notteal { background-color: teal; }
 .gold { background-color: gold; }
