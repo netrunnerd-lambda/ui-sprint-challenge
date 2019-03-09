@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -66,9 +67,11 @@ p {
     line-height: 1.4;
 }
 
+/** stay in yo lane, resets... >_> **/
+
 .container {
-    width: 800px;
     margin: 20px auto;
+    width: 800px;
 }
 
 .header > img {
@@ -81,12 +84,17 @@ p {
     margin-bottom: 40px;
 }
 
+.header-nav img {
+    min-height: 40px;
+}
+
 .header-nav a,
-.about-us .text-container a {
+.about-page .middle-content .text-container a {
     color: black;
     font-size: 14px;
     margin: 0px 44px 0px;
     text-decoration: none;
+    transition: all 0.5s;
 }
 
 .top-content {
@@ -135,7 +143,11 @@ p {
     justify-content: space-around;
 }
 
-.about .text-container, .bottom-content .text-container {
+.about .text-container {
+    padding: 0;
+}
+
+.bottom-content .text-container {
     padding-right: 4%;
 }
 
@@ -143,34 +155,34 @@ p {
     padding-right: 0;
 }
 
-.about-us {
+.about-page .middle-content {
     padding-top: 30px;
     border-bottom: none;
     border-top: 1px dashed black;
 }
 
-.about-us {
+.about-page .middle-content {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
-.about-us section {
+.about-page .middle-content section {
     border-bottom: 1px dashed black;
     margin-bottom: 60px;
     width: 45%;
 }
 
-.about-us section:nth-last-of-type(-n+2) {
+.about-page .middle-content section:nth-last-of-type(-n+2) {
     margin-bottom: 30px;
 }
 
-.about-us .text-container h2 {
+.about-page .middle-content .text-container h2 {
     margin: 10px 0 15px;
     padding: 0;
 }
 
-.about-us .text-container a {
+.about-page .middle-content .text-container a {
     border: 2px solid black;
     border-radius: 10px;
     display: inline-block;
@@ -179,11 +191,21 @@ p {
     padding: 10px 25px 10px;
 }
 
-footer {
-    width: 100%;
+.header-nav a:hover, 
+.about-page .middle-content .text-container a:hover {
     background: black;
-    position: aboslute;
-    bottom: 0;
+    color: white;
+}
+
+.about-page .bottom-content {
+    margin-bottom: 40px;
+}
+
+footer {
+    background: black;
+    bottom: 10;
+    position: absolute;
+    width: 800px;
 }
 
 footer nav {
@@ -197,6 +219,8 @@ footer nav {
 
 footer nav a {
     color: white;
+    font-size: 13px;
+    font-weight: bold;
     text-decoration: none;
 }
 
