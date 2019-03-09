@@ -90,11 +90,14 @@ p {
 
 .header-nav a,
 .about-page .middle-content .text-container a {
+    border-radius: 2px;
     color: black;
+    display: inline-block;
     font-size: 14px;
-    margin: 0px 44px 0px;
+    margin: 0px 40px 0px;
+    padding: 2px 5px;
     text-decoration: none;
-    transition: all 0.5s;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .top-content {
@@ -190,15 +193,16 @@ p {
     margin: 20px 0 20px;
     padding: 10px 25px 10px;
 }
-
-.header-nav a:hover, 
-.about-page .middle-content .text-container a:hover {
+ 
+.about-page .middle-content .text-container a:hover,
+.header-nav a:hover {
     background: black;
     color: white;
 }
 
 .about-page .bottom-content {
     margin-bottom: 40px;
+    padding-left: 5px;
 }
 
 footer {
@@ -222,6 +226,11 @@ footer nav a {
     font-size: 13px;
     font-weight: bold;
     text-decoration: none;
+    transition: color 0.5s;
+}
+
+footer nav a:hover {
+    color: darkgrey;
 }
 
 /* colors */
