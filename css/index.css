@@ -203,6 +203,10 @@ p {
     color: white;
 }
 
+.about-page .middle-content .text-container img {
+    max-width: 360px;
+}
+
 .about-page .bottom-content {
     margin-bottom: 40px;
     padding-left: 5px;
